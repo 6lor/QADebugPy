@@ -1,7 +1,11 @@
 import os
 import sys
 import time
-"""The script allows installing and unistalling the packages. Example of the script call would be "python adb_un_installer com.package.name path/to/the/file.apk". Script determine if the package or app is passed and uninstalls/installs the targets. This script is very useful if couple of the phones are used under test and the app is needed to be re-installed or removed. Make sure to have adb added to the path and USB debugging on your phones."""
+"""The script allows installing and unistalling the packages. Example of the script call would be: 
+"python adb_un_installer com.package.name path/to/the/file.apk". Script determine if the package 
+or app is passed and uninstalls/installs the targets. This script is very useful if couple of the 
+phones are used under test and the app is needed to be re-installed or removed. Make sure to have 
+adb added to the path and USB debugging on your phones."""
 
 def validate_path(path):
 	if os.path.exists(path):
