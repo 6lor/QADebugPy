@@ -11,7 +11,7 @@ if not len(sys.argv) > 3:
     raise SystemExit("Usage: %s src1 [src2] .. dest" % sys.argv[0])
 
 
-images = map(Image.open, sys.argv[1:-1])
+images = list(map(Image.open, sys.argv[1:-1]))
 
 mh = min(i.size[1] for i in images)
 
